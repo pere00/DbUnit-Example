@@ -33,7 +33,7 @@ public class Task
 	@Future
 	private Date dueDate;
 
-	private static final SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy");
+	private static final SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 
 	public Date getDueDate()
 	{

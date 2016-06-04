@@ -31,4 +31,12 @@ public class TaskDao
 	{
 		return entityManager.find(Task.class, id);
 	}
+	@Transactional
+	public void remove(long id)
+	{
+		Task task = entityManager.find(Task.class, id);
+		entityManager.remove(task);
+	
+	}
+	
 }
